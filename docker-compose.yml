@@ -1,0 +1,24 @@
+version: '3'
+services:
+  vidnft-front:
+    build:
+      context: ./vidnft-front
+    container_name: vidnft-front
+    networks:
+      vidnftnet: 
+        ipv4_address: 173.26.0.101
+    volumes:
+      - /tmp/vidnft-front-data:/opt/data
+    ports:
+      - 3000:3000
+
+networks:
+  vidnftnet:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 173.26.0.0/24
+
+volumes:
+  vidnft-front-data:
+

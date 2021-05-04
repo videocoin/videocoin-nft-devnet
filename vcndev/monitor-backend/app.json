@@ -1,0 +1,97 @@
+[
+  {
+    "name"        : "Video-Coin-Node-0",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "172.25.0.102",
+      "RPC_PORT"    : "8545",
+      "INSTANCE_NAME"   : "Video-Coin-Node-0",
+      "WS_SERVER"     : "http://172.25.0.103:3000",
+      "WS_SECRET"     : "test"
+    }
+  },
+  {
+    "name"        : "Video-Coin-Node-1",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "172.25.0.104",
+      "RPC_PORT"    : "8545",
+      "INSTANCE_NAME"   : "Video-Coin-Node-1",
+      "WS_SERVER"     : "http://172.25.0.103:3000",
+      "WS_SECRET"     : "test"
+    }
+  },
+  {
+    "name"        : "Video-Coin-Node-2",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "172.25.0.110",
+      "RPC_PORT"    : "8545",
+      "INSTANCE_NAME"   : "Video-Coin-Node-2",
+      "WS_SERVER"     : "http://172.25.0.103:3000",
+      "WS_SECRET"     : "test"
+    }
+  },
+  {
+    "name"        : "Video-Coin-Node-3",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "172.25.0.111",
+      "RPC_PORT"    : "8545",
+      "INSTANCE_NAME"   : "Video-Coin-Node-3",
+      "WS_SERVER"     : "http://172.25.0.103:3000",
+      "WS_SECRET"     : "test"
+    }
+  },
+  {
+    "name"        : "Video-Coin-Node-4",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "172.25.0.112",
+      "RPC_PORT"    : "8545",
+      "INSTANCE_NAME"   : "Video-Coin-Node-4",
+      "WS_SERVER"     : "http://172.25.0.103:3000",
+      "WS_SECRET"     : "test"
+    }
+  }
+]
