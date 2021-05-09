@@ -53,17 +53,24 @@ FROM vidnft-base as front
 
 WORKDIR /app
 
+
 RUN npm install react-scripts@3.4.1 -g
 
 # add app
 COPY ./package.json ./package.json
-COPY ./public ./public
-COPY ./src ./src
 COPY ./pkgs/Opensea-js  ./pkgs/Opensea-js
 COPY ./pkgs/wyvern-schemas-experiments ./pkgs/wyvern-schemas-experiments
 COPY --from=wyvern-js /app/pkgs/wyvern-js /app/pkgs/wyvern-js
 
 RUN yarn
-#RUN ls -la /
+
+ENV NETWORK="vdddev"
+ENV API_URL="http://localhost:3000"
+
+ENV PATH /app/node_modules/.bin:$PATH
+COPY ./public ./public
+COPY ./src ./src
+COPY ./.env ./.env
+
 # start app
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
