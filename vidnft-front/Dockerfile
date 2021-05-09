@@ -24,18 +24,30 @@ RUN truffle --config truffle.js --network viddev migrate
 RUN ls -al
 
 
-FROM vidnft-base as wyver-js
+FROM vidnft-base as wyvern-js
 WORKDIR /app
-COPY ./pkgs/wyvern-js ./pkgs/wyvern-js
 
+RUN npm install -g typescript
 
+COPY ./pkgs/wyvern-js/package.json ./pkgs/wyvern-js/package.json
+COPY ./pkgs/wyvern-js/tsconfig.json ./pkgs/wyvern-js/tsconfig.json
+COPY ./pkgs/wyvern-js/webpack.config.js ./pkgs/wyvern-js/webpack.config.js
+COPY ./pkgs/wyvern-js/scripts ./pkgs/wyvern-js/scripts
+COPY ./pkgs/wyvern-js/src ./pkgs/wyvern-js/src
 COPY --from=wyvern-ethereum /app/pkgs/wyvern-ethereum-experiments/config.json /app/pkgs/wyvern-js/src/wyvern-ethereum/config.json
 COPY --from=wyvern-ethereum /app/pkgs/wyvern-ethereum-experiments/build /app/pkgs/wyvern-js/src/wyvern-ethereum/build
 
 WORKDIR /app/pkgs/wyvern-js
-
 RUN yarn --verbose
-RUN scripts/build.sh
+#RUN scripts/build.sh
+RUN cat package.json
+RUN cat yarn.lock
+RUN yarn const_gen
+RUN yarn abi_gen
+RUN npm install -g typescript
+
+RUN yarn --verbose run tsc
+
 
 FROM vidnft-base as front
 
