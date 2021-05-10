@@ -12,8 +12,9 @@ COPY ./pkgs/wyvern-ethereum-experiments ./pkgs/wyvern-ethereum-experiments
 WORKDIR /app/pkgs/wyvern-ethereum-experiments
 RUN yarn
 
+#
 # deploy wyvern-ethereum contracts 
-
+#
 ARG ARG_PRIV_KEY=""
 ENV VID_PRIV_KEY=$ARG_PRIV_KEY
 ARG ARG_RPC=""
@@ -23,7 +24,9 @@ ENV VID_RPC=$ARG_RPC
 RUN truffle --config truffle.js --network viddev migrate
 RUN ls -al
 
-
+#
+# Build wyvern-js with updated contracts
+#
 FROM vidnft-base as wyvern-js
 WORKDIR /app
 
@@ -40,6 +43,8 @@ COPY --from=wyvern-ethereum /app/pkgs/wyvern-ethereum-experiments/build /app/pkg
 WORKDIR /app/pkgs/wyvern-js
 RUN yarn --verbose
 #RUN scripts/build.sh
+# lint is giving problem, skif for now.
+
 RUN cat package.json
 RUN cat yarn.lock
 RUN yarn const_gen
@@ -49,6 +54,9 @@ RUN npm install -g typescript
 RUN yarn --verbose run tsc
 
 
+#
+# Fronend with updated wyvern-js
+#
 FROM vidnft-base as front
 
 WORKDIR /app
@@ -56,12 +64,14 @@ WORKDIR /app
 
 RUN npm install react-scripts@3.4.1 -g
 
-# add app
 COPY ./package.json ./package.json
-COPY ./pkgs/Opensea-js  ./pkgs/Opensea-js
 COPY ./pkgs/wyvern-schemas-experiments ./pkgs/wyvern-schemas-experiments
+
+#copy updated wyvern-js
 COPY --from=wyvern-js /app/pkgs/wyvern-js /app/pkgs/wyvern-js
 
+COPY ./pkgs/Opensea-js  ./pkgs/Opensea-js
+# Check if  we need to run "npm run build" in Opensea-js
 RUN yarn
 
 ENV NETWORK="vdddev"

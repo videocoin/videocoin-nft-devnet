@@ -14,6 +14,13 @@ Frontend is created using a layered image as shown below:
 ![Frontend hosting service, docker image build-time](./docs/frontend.drawio.svg)
 
 The repo includes the follwoing Opesea SDK pacakges as submodules. These modules are modified during build time of the docker image based on the user configuration.
+
+An example to build the front-end image supplying private key and web3 rpc for deployment of exchange contracts:
+```
+docker build --build-arg ARG_PRIV_KEY=0xXXXXXXXX --build-arg ARG_RPC=http://localhost:8545 --network="host" -t vidnft-front .
+```
+This produces an image that contains wywvern-js containing config.json and build folders of wyvern-ethereum with the newly deployed contract addresses, ABI.
+
 ### wywvern-ethereum 
 The wyvern exchange contracts are installed to the selected blockchain during build-time of the image.
 ### wyvern-js
