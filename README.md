@@ -6,6 +6,8 @@ Docker-compose based devnet that includes the following services:
 * Content Management
 * Blockchain devnet
 
+![Video NFT Devenet](./docs/devnet.drawio.svg)
+
 ## Frontend
 
 Frontend is created using a layered image as shown below:  
