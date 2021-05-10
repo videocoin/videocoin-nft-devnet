@@ -18,7 +18,8 @@ export default class App extends React.Component {
 
   onChangeAddress = () => {
     this.seaport = new OpenSeaPort(web3Provider, {
-      networkName: Network.Main
+      //networkName: Network.Main
+      networkName: process.env.REACT_APP_NETWORK === "viddev" ? Network.VideoCoin : Network.Main
     })
     this.web3 = this.seaport.web3
     this.web3.eth.getAccounts((err, res) => {

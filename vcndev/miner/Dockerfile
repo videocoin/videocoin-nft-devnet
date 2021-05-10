@@ -24,7 +24,7 @@ ENV address=""
 ENV bootnodeId=""
 ENV bootnodeIp=""
 
-CMD exec geth --bootnodes "enode://$bootnodeId@$bootnodeIp:30301" --networkid="500" --verbosity=4 --rpc --rpcapi "eth,web3,personal,net,miner,admin,debug,db" --rpcaddr "0.0.0.0" --rpccorsdomain "*" --syncmode=full --mine --miner.etherbase $address --allow-insecure-unlock --unlock $address --password ~/.accountpassword --miner.gasprice "0"
+CMD exec geth --bootnodes "enode://$bootnodeId@$bootnodeIp:30301" --networkid="500" --verbosity=4 --rpc --rpcapi "eth,web3,personal,net,miner,admin,debug,db" --rpcaddr "0.0.0.0" --rpccorsdomain "*" --rpc.allow-unprotected-txs --syncmode=full --mine --miner.etherbase $address --allow-insecure-unlock --unlock $address --password ~/.accountpassword --miner.gasprice "0"
 
 EXPOSE 8545
 EXPOSE 30303

@@ -23,8 +23,13 @@ export default class Account extends React.Component {
     const _address = account.address;
     const displayName = _username ? _username : _address.substring(2, MAX_ADDR_LEN + 2).toUpperCase();
 
+    let openSeaUrl = OPENSEA_URL
+
+    if (process.env.REACT_APP_API_URL ) {
+      openSeaUrl = process.env.REACT_APP_API_URL
+    }
     return (
-      <a target="_blank" rel="noopener noreferrer" href={`${OPENSEA_URL}/accounts/${_address}`}>
+      <a target="_blank" rel="noopener noreferrer" href={`${openSeaUrl}/accounts/${_address}`}>
         {showImage && account
           ? <div style={{backgroundImage:'url("'+account.image+'")'}} />
           : null

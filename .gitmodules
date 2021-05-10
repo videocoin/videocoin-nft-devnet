@@ -1,0 +1,15 @@
+[submodule "vidnft-front/pkgs/wyvern-ethereum-experiments"]
+	path = vidnft-front/pkgs/wyvern-ethereum-experiments
+	url = https://github.com/videocoin/wyvern-ethereum-experiments.git
+[submodule "vidnft-front/pkgs/wyvern-schemas-experiments"]
+	path = vidnft-front/pkgs/wyvern-schemas-experiments
+	url = https://github.com/videocoin/wyvern-schemas-experiments.git
+[submodule "vidnft-front/pkgs/Opensea-js"]
+	path = vidnft-front/pkgs/Opensea-js
+	url = https://github.com/videocoin/Opensea-js.git
+[submodule "vidnft-front/pkgs/wyvern-js"]
+	path = vidnft-front/pkgs/wyvern-js
+	url = https://github.com/videocoin/wyvern-js.git
+[submodule "vidnft-orderbook/Opensea-js"]
+	path = vidnft-orderbook/Opensea-js
+	url = https://github.com/videocoin/Opensea-js.git
