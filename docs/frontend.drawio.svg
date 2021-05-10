@@ -1,0 +1,229 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="721px" height="751px" viewBox="-0.5 -0.5 721 751" content="&lt;mxfile&gt;&lt;diagram id=&quot;TsS9U9S5aKNNq-vHGQsd&quot; name=&quot;Page-1&quot;&gt;7Vpbd9o4EP41PJKDbczlMUDS7dntNqfZk7ZPPcIebCVC8soyl/76lWT5hk2gKYFs6zwQazQjjWbmmxkZOs50uXnHURR+YD6Qjt3zNx1n1rHtcc+Rn4qwTQmjviEEHPspySoI9/g7GGLPUBPsQ1xhFIwRgaMq0WOUgicqNMQ5W1fZFoxUd41QADXCvYdInfoZ+yI0p3B7Bf0PwEGY7Wz1zMwceU8BZwk1+1FGIZ1ZomwZwxqHyGfrEsm56ThTzphIn5abKRBl1cxiqdztntlcZQ5UHCNgpwIrRBJz6o49IFJ04uOV0k9sjTkG/yZKqQnBFLqhOfe1ZLHGkfT4RFuYim6s/agnbDORicqnwPzXWyj+xj2OXWiFfboQ3TmKU850WXnadOXqbpKsz3RiHagMe8liydiWplZmEDxZLORq+9SxK/vZ6xALuI+Qp8ZriSTJFIolkSPL6GGwYdlmfIuWmChUPQD3EUWGPGWEcb2oc6v/lLvQHMgkD8iMRYeklMKE7JBiwdkTlJZy5GKOk2teji0TbivgAjYlkom1d8CWIPhWsmxyjKQiJiUMMxysC4Dl+A9L4BoaGjKYDvKli+CWDya+m2N9UDM9+BLwZsi4CFnAKCI3BXXiJXwFvnGFtqAe9eSoEPiLsciwPIIQW+MulAhW9+Ue3+26uMmXL3BNzBLumdOa7CsQD8Bw9VOSssOz7uNAkMCramL8GV+MWl/s+mJ4KV84e2vADyXHWmZcb2VioF0QIXBIltmic/7yJQ+k+H01S2Yn0UUEBzRdnMBCnWt/1crmmotdTa1JgmVvYfeueRBXC1FDxbmUknef3j98+/Pm68u0O4ECP2WAPXs8Z57d/R/ez759ups+f/5dalus82I96B1ZrC37BNW6f6LO9IdCZL1dS/uUUpa+NQB/GWZOoJC82yxwcPUYd+ypulmYRJNqFbdBezBo+8MzdpjW5VtM2GDxRYlfuWb01Symnmeb8mCbDag8pxFy7Yyg5a7Go0FGKIT1qCJ9BxxLcwE3xMt2V269u7KcS7VX7uu2V495FvgFG6vy0do6fWzKO/ZS7Z4g5Q1r0T0hzHvyQoRp3XsfNLXHVKT6sKISnb+z5wZ21XOue84Oa/xGi1U201ysLltZhm/o3p4FRgl7M4gIU5t91sWho1+OC448EdecrXJ31R0cZLZGc82gTK0cFhubqmGa52eeNJAq9BMV6NhD5NpMLLHv6yiJGKZCn8yddNxZM7Kq0XMAmGd3+vEgdkY716SGjtMaNoD4FBi27BbE/28Q73/79qr33HnePCr1ZUPGJJC16bwn9b1Y22YdarPs8Tlvlm+1WD9/s7wszq1+wz3wckivv9H6GAGNAWkYtsgqkNU/4wXGqt9gzpCAy55XL/YOJuT2Xd/huDlrQh7VwuYB+8Ak6e/bf+TndRS1zim/lXg9TMth8YsZPVf6QZJz8x8=&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="680" width="210" height="70" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 715px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="line-height: 19px ; font-size: 12px">
+                                    <font style="font-size: 12px">
+                                        vidnft-base:
+                                    </font>
+                                </div>
+                                <font style="font-size: 12px">
+                                    node:13 + truffle
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="719" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    vidnft-base:node:13 + truffle
+                </text>
+            </switch>
+        </g>
+        <path d="M 105 560 Q 105 560 105 506.37" fill="none" stroke="#33ff33" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 105 501.12 L 108.5 508.12 L 105 506.37 L 101.5 508.12 Z" fill="#33ff33" stroke="#33ff33" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 210 620 Q 360 620 360 595 Q 360 570 503.63 570" fill="none" stroke="#33ff33" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 508.88 570 L 501.88 573.5 L 503.63 570 L 501.88 566.5 Z" fill="#33ff33" stroke="#33ff33" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="560" width="210" height="120" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 620px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <font style="font-size: 12px">
+                                    wyvern-ethereum
+                                    <br style="font-size: 12px"/>
+                                </font>
+                                <div style="text-align: left ; font-size: 12px ; line-height: 19px">
+                                    Build Args:
+                                </div>
+                                <div style="text-align: left ; font-size: 12px ; line-height: 19px">
+                                    PRIV_KEY
+                                </div>
+                                <div style="font-size: 12px ; line-height: 19px">
+                                    <div style="text-align: left ; line-height: 19px ; font-size: 12px">
+                                        VID_RPC
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="624" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    wyvern-ethereum...
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="430" width="210" height="70" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 465px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="line-height: 19px ; font-size: 12px">
+                                    wywver-ethereum folder
+                                </div>
+                                <div style="line-height: 19px ; font-size: 12px">
+                                    config.js, build folders
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="469" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    wywver-ethereum folder...
+                </text>
+            </switch>
+        </g>
+        <path d="M 105 380 Q 105 350 110.45 350 Q 115.9 350 115.92 325.39" fill="none" stroke="#33ff33" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 115.92 320.14 L 119.41 327.14 L 115.92 325.39 L 112.41 327.14 Z" fill="#33ff33" stroke="#33ff33" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="380" width="210" height="50" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 405px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <font style="font-size: 12px">
+                                    wyvern-js
+                                    <br style="font-size: 12px"/>
+                                </font>
+                                <div style="text-align: left ; font-size: 12px ; line-height: 19px">
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="409" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    wyvern-js...
+                </text>
+            </switch>
+        </g>
+        <rect x="510" y="510" width="210" height="120" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 570px; margin-left: 511px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                Blockchain
+                                <br/>
+                                Main or devnet
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="615" y="574" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    Blockchain...
+                </text>
+            </switch>
+        </g>
+        <rect x="270" y="630" width="170" height="20" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 640px; margin-left: 355px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+                                Deploy Wyvern contracts
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="355" y="644" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    Deploy Wyvern contracts
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="250" width="210" height="70" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 285px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="line-height: 19px ; font-size: 12px">
+                                    wybvern-js as local package
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="289" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    wybvern-js as local package
+                </text>
+            </switch>
+        </g>
+        <path d="M 105 200 Q 105 200 105 126.37" fill="none" stroke="#33ff33" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 105 121.12 L 108.5 128.12 L 105 126.37 L 101.5 128.12 Z" fill="#33ff33" stroke="#33ff33" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="0" y="200" width="210" height="50" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 225px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                Opensea-js
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="229" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    Opensea-js
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="50" width="210" height="70" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 85px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                <div style="line-height: 19px ; font-size: 12px">
+                                    Opensea-js, wybvern-js as local packages
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="89" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    Opensea-js, wybvern-js as local pac...
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="0" width="210" height="50" fill="none" stroke="#33ff33" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 208px; height: 1px; padding-top: 25px; margin-left: 1px;">
+                        <div style="box-sizing: border-box; font-size: 0; text-align: center; ">
+                            <div style="display: inline-block; font-size: 12px; font-family: Verdana; color: #FFFFFF; line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                Video NFT App
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="105" y="29" fill="#FFFFFF" font-family="Verdana" font-size="12px" text-anchor="middle">
+                    Video NFT App
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Viewer does not support full SVG 1.1
+            </text>
+        </a>
+    </switch>
+</svg>
