@@ -1,0 +1,19 @@
+// {type:sequence}
+// {generate:true}
+
+[Publisher]mint(File)>[FrontEnd]
+[FrontEnd]Wallet Req.>[Publisher]
+[Publisher]Wallet Authorize>[FrontEnd]
+
+[FrontEnd]File, PubKey>[CMS]
+[CMS]Encrypt>[CMS]
+[CMS]Upload>[TextileHub]
+
+[CMS]Thumbnail>[CMS]
+[CMS]Upload>[TextileHub]
+
+[CMS]DRM Data>[CMS]
+[CMS]TokenURI Content>[TextileHub]
+[CMS]TokenURI>>[FrontEnd]
+[FrontEnd]TokenURI, Address>[BackendAPI]
+[BackendAPI]TokenURI, Address>[TokenContract]

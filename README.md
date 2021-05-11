@@ -74,3 +74,6 @@ vcndev sevice includes a 3-node Ethereum PoA network.
     * Upload Token_URI File to  Textile Hub
     * Transfer NFT token to User_B (Blockchain)
   * Play the video with User_B DRM Data
+
+### NFT Minting Sequence Diagram
+![NFT Minting Sequence Diagram](./docs/mint-sequence.svg)
