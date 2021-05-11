@@ -13,3 +13,6 @@
 [submodule "vidnft-orderbook/Opensea-js"]
 	path = vidnft-orderbook/Opensea-js
 	url = https://github.com/videocoin/Opensea-js.git
+[submodule "vidnft-front/pkgs/wyvern-nft-tokens-poc"]
+	path = vidnft-front/pkgs/wyvern-nft-tokens-poc
+	url = https://github.com/videocoin/wyvern-nft-tokens-poc.git

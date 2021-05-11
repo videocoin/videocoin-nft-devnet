@@ -6,8 +6,9 @@ WORKDIR /app
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
 
-# add app
+# add wyvern-ethereum
 COPY ./pkgs/wyvern-ethereum-experiments ./pkgs/wyvern-ethereum-experiments
+COPY ./pkgs/wyvern-nft-tokens-poc ./pkgs/wyvern-nft-tokens-poc
 
 WORKDIR /app/pkgs/wyvern-ethereum-experiments
 RUN yarn
@@ -23,6 +24,15 @@ ENV VID_RPC=$ARG_RPC
 
 RUN truffle --config truffle.js --network viddev migrate
 RUN ls -al
+
+#
+# deploy token contracts 
+#
+WORKDIR /app/pkgs/wyvern-nft-tokens-poc
+RUN npm install
+RUN truffle --network viddev migrate
+RUN ls -al
+RUN cat config.json
 
 #
 # Build wyvern-js with updated contracts
@@ -43,7 +53,7 @@ COPY --from=wyvern-ethereum /app/pkgs/wyvern-ethereum-experiments/build /app/pkg
 WORKDIR /app/pkgs/wyvern-js
 RUN yarn --verbose
 #RUN scripts/build.sh
-# lint is giving problem, skif for now.
+# lint is giving problem, skip for now.
 
 RUN cat package.json
 RUN cat yarn.lock
@@ -55,7 +65,7 @@ RUN yarn --verbose run tsc
 
 
 #
-# Fronend with updated wyvern-js
+# Frontend with updated wyvern-js
 #
 FROM vidnft-base as front
 
