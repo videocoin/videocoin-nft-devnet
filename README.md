@@ -53,11 +53,24 @@ vcndev sevice includes a 3-node Ethereum PoA network.
 * Create test accounts (User_A, User_B) and fund
 * mint a Video NFT using User_A account
   * Inputs: video_file, token_id
-  * Outputs: token_URI and encrypted video assets 
-  * Play the video with User_A DRM data
+  * Outputs: token_URI and encrypted video assets
+  * Operation:
+    * Upload video_file(Frontend) => Encrypt(CMS) => Upload to Textile Hub
+    * Upload thumbnail to Textile Hub(CMS)
+    * Upload Token_URI File to Textile Hub(CMS)
+    * Mint NFT token with token_id and token_URI(FrontEnd=>Blockchain))
+  * Play the video with User_A DRM data(FrontEnd)
 * Make SellOrder with User_A account
   * Inputs: Token Contract address, token_Id, ask amount
-* Fullfill the order with User_B account
+  * Operation:
+    * Add SellOrder (OrderBook)
+* Fulfill the order with User_B account
   * Inputs: Token Contract address, token_Id, offer amount
   * Outputs: Updated Token_Uri 
+  * Outputs: token_URI and encrypted video assets
+  * Operation:
+    * Update order(OrderBook)
+    * ReEncrypt(CMS) => Upload to Textile Hub
+    * Upload Token_URI File to  Textile Hub
+    * Transfer NFT token to User_B (Blockchain)
   * Play the video with User_B DRM Data
