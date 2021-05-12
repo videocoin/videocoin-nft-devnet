@@ -75,5 +75,7 @@ vcndev sevice includes a 3-node Ethereum PoA network.
     * Transfer NFT token to User_B (Blockchain)
   * Play the video with User_B DRM Data
 
+### User Registration with marketplace
+![User Registration](./docs/user-registration.svg)
 ### NFT Minting Sequence Diagram
 ![NFT Minting Sequence Diagram](./docs/mint-sequence.svg)
