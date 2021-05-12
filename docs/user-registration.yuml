@@ -1,0 +1,7 @@
+// {type:sequence}
+// {generate:true}
+
+[Publisher]Signin>[FrontEnd]
+[FrontEnd]register(Address)>[MarketPlace]
+[FrontEnd]auth(address, signature)>[MarketPlace]
+[MarketPlace]UserCredentials(address, nonce, publicKey)>[Database]

@@ -16,3 +16,6 @@
 [submodule "vidnft-front/pkgs/wyvern-nft-tokens-poc"]
 	path = vidnft-front/pkgs/wyvern-nft-tokens-poc
 	url = https://github.com/videocoin/wyvern-nft-tokens-poc.git
+[submodule "marketplace"]
+	path = marketplace
+	url = https://github.com/videocoin/marketplace.git
