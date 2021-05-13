@@ -5,7 +5,7 @@
 [FrontEnd]Wallet Req.>[Publisher]
 [Publisher]Wallet Authorize>[FrontEnd]
 
-[FrontEnd]File, Address>[MarketPlace]
+[FrontEnd]File Upload>[MarketPlace]
 [MarketPlace]Encrypt>[MarketPlace]
 [MarketPlace]Upload>[TextileHub]
 
@@ -14,6 +14,8 @@
 
 [MarketPlace]DRM Data>[MarketPlace]
 [MarketPlace]TokenURI Content>[TextileHub]
-[MarketPlace]TokenURI>>[FrontEnd]
-[FrontEnd]mint(TokenURI, Address)>[MarketPlace]
+
 [MarketPlace]mint(minter, TokenURI, TokenId, Publisher)>[TokenContract]
+[FrontEnd]getAsset(id)>[MarketPlace]
+[MarketPlace]Asset Info for id.>[FrontEnd]
+
