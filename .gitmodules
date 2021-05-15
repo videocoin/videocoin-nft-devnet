@@ -1,21 +1,9 @@
-[submodule "vidnft-front/pkgs/wyvern-ethereum-experiments"]
-	path = vidnft-front/pkgs/wyvern-ethereum-experiments
-	url = https://github.com/videocoin/wyvern-ethereum-experiments.git
-[submodule "vidnft-front/pkgs/wyvern-schemas-experiments"]
-	path = vidnft-front/pkgs/wyvern-schemas-experiments
-	url = https://github.com/videocoin/wyvern-schemas-experiments.git
-[submodule "vidnft-front/pkgs/Opensea-js"]
-	path = vidnft-front/pkgs/Opensea-js
-	url = https://github.com/videocoin/Opensea-js.git
-[submodule "vidnft-front/pkgs/wyvern-js"]
-	path = vidnft-front/pkgs/wyvern-js
-	url = https://github.com/videocoin/wyvern-js.git
-[submodule "vidnft-orderbook/Opensea-js"]
-	path = vidnft-orderbook/Opensea-js
-	url = https://github.com/videocoin/Opensea-js.git
-[submodule "vidnft-front/pkgs/wyvern-nft-tokens-poc"]
-	path = vidnft-front/pkgs/wyvern-nft-tokens-poc
-	url = https://github.com/videocoin/wyvern-nft-tokens-poc.git
 [submodule "marketplace"]
 	path = marketplace
 	url = https://github.com/videocoin/marketplace.git
+[submodule "nft-app"]
+	path = nft-app
+	url = https://github.com/videocoin/nft-app.git
+[submodule "wyvern-nft-tokens-poc"]
+	path = wyvern-nft-tokens-poc
+	url = https://github.com/videocoin/wyvern-nft-tokens-poc.git
