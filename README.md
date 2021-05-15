@@ -4,7 +4,6 @@
 checkout the repo, get the submodules and run the docker-compose.
 ```
 git submodule update --init --recursive
-docker-compose up
 ```
 Update the docker-compose to lattest vetsion(v1.29.1)  
 https://docs.docker.com/compose/install/

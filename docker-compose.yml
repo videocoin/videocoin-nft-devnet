@@ -12,7 +12,7 @@ services:
       vidnftnet:
         ipv4_address: 173.26.0.100
     healthcheck:
-      test: wget  --post-data='{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' http://localhost:8545
+      test: wget  --header=Content-Type:application/json --post-data='{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' http://localhost:8545
       interval: 2s
       timeout: 5s
       retries: 30
@@ -94,9 +94,11 @@ services:
         condition: service_healthy
     env_file: 
       - nft-contracts_env.list
+    volumes:
+      - contracts_data:/code/data      
     networks:
       vidnftnet:
-    command:  bash -c 'truffle --network viddev migrate'
+    command:  bash -c 'truffle --network viddev migrate && cat config.json'
 
 
   explorer:
@@ -122,4 +124,6 @@ networks:
 
 volumes:
   ganache_data:
+  contracts_data:
+    
 
