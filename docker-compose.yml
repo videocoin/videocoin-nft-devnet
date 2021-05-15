@@ -86,7 +86,8 @@ services:
       - 8080:80
 
   nft-contracts-deploy:
-    image: nft-contracts
+    build: 
+      context: nft-contracts
     container_name: nft-contracts-deploy
     depends_on:
       ganache:
