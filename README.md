@@ -9,6 +9,12 @@ Open the browser and launch the aft-app.
 ```
 http://173.26.0.130/
 ```
+
+Lightweight block explorer
+```
+http://173.26.0.140/
+```
+
 ## Overview of Installer
 Docker-compose based devnet that includes the following services:
 * Frontend hosting
@@ -44,3 +50,9 @@ MARKETPLACE_ERC1155_CONTRACT_KEY_PASS=
 
 ## Ganache
 Test network.
+
+## Explorer
+Lightweight Block Explorer
+
+## nft-contracts
+Docker image to deploy nft-tokens
