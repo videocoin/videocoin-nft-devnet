@@ -9,7 +9,8 @@ services:
     volumes:
       - ganache_data:/ganache_data
     networks:
-      vidnftnet:   
+      vidnftnet:
+        ipv4_address: 173.26.0.100
     entrypoint:
       - node
       - ./ganache-core.docker.cli.js
@@ -29,9 +30,10 @@ services:
       POSTGRES_USER: "root"
       POSTGRES_HOST_AUTH_METHOD: "trust"
     networks:
-      vidnftnet: 
+      vidnftnet:
+        ipv4_address: 173.26.0.110 
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready"]
       interval: 2s
       timeout: 50s
       retries: 25        
@@ -47,7 +49,7 @@ services:
     env_file: 
       - marketplace_env.list
     networks:
-      vidnftnet: 
+      vidnftnet:
     command:  bash -c '/goose -dir /migrations -table marketplace postgres "host=postgres port=5432 dbname=marketplace sslmode=disable" up'
 
   marketplace:
@@ -60,7 +62,8 @@ services:
       - marketplace_env.list
     #network_mode: host      
     networks:
-      vidnftnet: 
+      vidnftnet:
+        ipv4_address: 173.26.0.120 
     ports:
       - 8088:8088
           
@@ -69,8 +72,11 @@ services:
       context: ./nft-app
     container_name: nft-app
     #network_mode: host
+    environment:
+      REACT_APP_BASE_URL: 'http://marketplace:8088/api/v1' 
     networks:
-      vidnftnet: 
+      vidnftnet:
+        ipv4_address: 173.26.0.130 
     ports:
       - 8080:80
         
