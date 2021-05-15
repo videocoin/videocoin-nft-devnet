@@ -87,7 +87,7 @@ services:
 
   nft-contracts-deploy:
     build: 
-      context: nft-contracts
+      context: wyvern-nft-tokens-poc
     container_name: nft-contracts-deploy
     depends_on:
       ganache:
