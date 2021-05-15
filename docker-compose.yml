@@ -56,7 +56,8 @@ services:
     command:  bash -c '/goose -dir /migrations -table marketplace postgres "host=postgres port=5432 dbname=marketplace sslmode=disable" up'
 
   marketplace:
-    image: marketplace
+    build:
+      context: ./marketplace
     container_name: marketplace
     depends_on:
       postgres:
