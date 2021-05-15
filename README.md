@@ -36,10 +36,6 @@ The package is updated with deployed wyvern-ethereum contract addresss(config.js
 ### Opensea-js
 The package includes the wyvern-js as a local folder
 
-## API Backend (vidnft-oderbook)
-vidnft-oderbook wraps the backend mockup. See the details of the backend in the following repo:    
-https://github.com/videocoin/opensea-js-test
-
 ## Marketplace
 This service provides the backend API for the VideoCoin NFT.
 

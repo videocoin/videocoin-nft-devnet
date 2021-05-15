@@ -8,3 +8,4 @@ MARKETPLACE_ERC1155_CONTRACT_KEY={"address":"90f8bf6a479f320ead074411a4b0e7944ea
 MARKETPLACE_ERC1155_CONTRACT_KEY_PASS=vidnfttest
 GOOGLE_APPLICATION_CREDENTIALS=/home/ram/liveplanet/videocoin-nft-demo/gcp-credentials.json
 MARKETPLACE_GCP_BUCKET=videocoin-nft-demo-1
+DBURI="host=postgres port=5432 dbname=marketplace sslmode=disable"
