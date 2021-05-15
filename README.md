@@ -6,6 +6,16 @@ checkout the repo, get the submodules and run the docker-compose.
 git submodule update --init --recursive
 docker-compose up
 ```
+Update the docker-compose to lattest vetsion(v1.29.1)  
+https://docs.docker.com/compose/install/
+
+
+Run the command
+
+```
+docker-compose up
+```
+
 Open the browser and launch the aft-app.
 ```
 http://173.26.0.130/

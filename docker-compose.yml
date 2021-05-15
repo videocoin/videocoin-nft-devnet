@@ -44,7 +44,8 @@ services:
       - 5432:5432
 
   marketplace_init:
-    image: marketplace
+    build:
+      context: ./marketplace
     container_name: marketplace_init
     depends_on:
       postgres:
