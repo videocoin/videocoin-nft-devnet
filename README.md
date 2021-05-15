@@ -48,14 +48,6 @@ Testing the service docker image:
 ### Obtain TextileHub credentials
 https://docs.textile.io/hub/apis/
 
-### Obtain google credentials for transcoder service
-
-https://cloud.google.com/transcoder/docs/quickstart
-
-### Start postgress server
-```
-docker run -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_USER=root  -e POSTGRES_DB=marketplace --name postgres-docker  -p 5432:5432  postgres
-```
 ### Configure Marketplace
 Example environment variables file (env.list)
 ```
@@ -67,8 +59,6 @@ MARKETPLACE_BLOCKCHAIN_URL=
 MARKETPLACE_ERC1155_CONTRACT_ADDRES=0
 MARKETPLACE_ERC1155_CONTRACT_KEY=
 MARKETPLACE_ERC1155_CONTRACT_KEY_PASS=
-GOOGLE_APPLICATION_CREDENTIALS=
-MARKETPLACE_GCP_BUCKET=
 ```
 
 
