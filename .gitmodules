@@ -19,3 +19,6 @@
 [submodule "marketplace"]
 	path = marketplace
 	url = https://github.com/videocoin/marketplace.git
+[submodule "nft-app"]
+	path = nft-app
+	url = https://github.com/videocoin/nft-app.git

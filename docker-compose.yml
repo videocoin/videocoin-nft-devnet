@@ -1,17 +1,66 @@
 version: '3'
 services:
-  vidnft-front:
-    build:
-      context: ./vidnft-front
-    container_name: vidnft-front
+
+  ganache:
+    image: trufflesuite/ganache-cli:latest
+    container_name: ganache
+    ports:
+      - "8545:8545"
+    volumes:
+      - ganache_data:/ganache_data
     networks:
       vidnftnet: 
-        ipv4_address: 173.26.0.101
-    volumes:
-      - /tmp/vidnft-front-data:/opt/data
-    ports:
-      - 3000:3000
+        ipv4_address: 173.26.0.110
+  
+    entrypoint:
+      - node
+      - ./ganache-core.docker.cli.js
+      - --deterministic
+      - --db=/ganache_data
+      - --networkId
+      - '10'
+      - --hostname
+      - '0.0.0.0'
+      - --debug
 
+  postgres:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_DB: "marketplace"
+      POSTGRES_USER: "root"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+    networks:
+      vidnftnet: 
+        ipv4_address: 173.26.0.120
+    ports:
+      - 5432:5432
+
+  marketplace:
+    image: marketplace
+    container_name: marketplace
+    depends_on:
+      - "postgres"
+    env_file: 
+      - marketplace_env.list
+    network_mode: host      
+    #networks:
+    #  vidnftnet: 
+    #    ipv4_address: 173.26.0.122
+    #ports:
+    #  - 8088:8088
+          
+  nft-app:
+    build:
+      context: ./nft-app
+    container_name: nft-app
+    #network_mode: host
+    #networks:
+    #  vidnftnet: 
+    #    ipv4_address: 173.26.0.130
+    ports:
+      - 8080:80
+        
 networks:
   vidnftnet:
     driver: bridge
@@ -20,5 +69,5 @@ networks:
       - subnet: 173.26.0.0/24
 
 volumes:
-  vidnft-front-data:
+  ganache_data:
 
