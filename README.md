@@ -55,4 +55,10 @@ Test network.
 Lightweight Block Explorer
 
 ## nft-contracts
-Docker image to deploy nft-tokens
+Docker image to deploy nft-tokens  
+Environment variables file: nft-contracts_env.list
+```
+VID_RPC="http://ganache:8545"
+VID_PRIV_KEY=""
+ERC1155_TOKEN_URI_TEMPLATE="http://localhost:3000/tokens/nft1155/{id}.json
+```
