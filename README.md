@@ -84,12 +84,3 @@ ERC1155_TOKEN_URI_TEMPLATE="ipfs://{id}"
 
 ## Explorer
 Lightweight Block Explorer
-
-## NFT-Contracts
-Docker image to deploy nft-tokens  
-Environment variables file: nft-contracts_env.list
-```
-VID_RPC="http://ganache:8545"
-VID_PRIV_KEY=""
-ERC1155_TOKEN_URI_TEMPLATE="http://localhost:3000/tokens/nft1155/{id}.json
-```
