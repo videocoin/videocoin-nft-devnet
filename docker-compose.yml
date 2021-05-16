@@ -42,8 +42,8 @@ services:
       - 5432:5432
 
   marketplace_init:
-    build:
-      context: ./marketplace
+    build: ./marketplace
+    image: marketplace
     container_name: marketplace_init
     depends_on:
       postgres:
@@ -55,10 +55,11 @@ services:
     command:  bash -c '/goose -dir /migrations -table marketplace postgres "host=postgres port=5432 dbname=marketplace sslmode=disable" up'
 
   marketplace:
-    build:
-      context: ./marketplace
+    image: marketplace
     container_name: marketplace
     depends_on:
+      marketplace_init:
+        condition: service_started
       postgres:
         condition: service_healthy
     env_file: 
@@ -71,10 +72,9 @@ services:
       - 8088:8088
           
   nft-app:
-    build:
-      context: ./nft-app
+    build:  ./nft-app
+    image: nft-app
     container_name: nft-app 
-    #network_mode: host
     environment:
       REACT_APP_BASE_URL: 'http://173.26.0.120:8088/api/v1'
        
