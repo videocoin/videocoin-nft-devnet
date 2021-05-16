@@ -20,23 +20,32 @@ Open the browser and launch the aft-app.
 http://173.26.0.130/
 ```
 
-Lightweight block explorer
+Open Lightweight Block Explorer
 ```
 http://173.26.0.140/
 ```
 
-## Overview of Installer
+## VideoNFT Marketplace Components
 Docker-compose based devnet that includes the following services:
-* Frontend hosting
-* API Backend
-* Content Management
-* Blockchain devnet
+* NFT-APP(Video NFT Frontend)
+* Marketplace(API Backend)
+* Postgres(Database for userinfo)
+* Ganache(Blockchain Devnet)
+* Explorer(Lightweight Block Explorer)
+* Token Contracts(Contract deployer)
 
 ![Video NFT Devenet](./docs/devnet.drawio.svg)
 
 ## nft-app
 VideoCoin NFT Frontend
 
+Environment Variables
+```
+REACT_APP_BASE_URL=
+REACT_APP_NETWORKS=
+REACT_APP_TOKEN_ADDRESS=
+REACT_APP_ESCROW_ADDRESS=
+```
 ## Marketplace
 This service provides the backend API for the VideoCoin NFT.
 
@@ -61,10 +70,22 @@ MARKETPLACE_ERC1155_CONTRACT_KEY_PASS=
 ## Ganache
 Test network.
 
+Environment variables:
+```
+NETWORK_ID=
+```
+## Token Contracts
+Environment variables:
+```
+VID_PRIV_KEY=""
+VID_RPC=http://localhost:8545
+ERC1155_TOKEN_URI_TEMPLATE="ipfs://{id}"
+```
+
 ## Explorer
 Lightweight Block Explorer
 
-## nft-contracts
+## NFT-Contracts
 Docker image to deploy nft-tokens  
 Environment variables file: nft-contracts_env.list
 ```
