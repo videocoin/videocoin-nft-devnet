@@ -21,8 +21,6 @@ services:
       - ./ganache-core.docker.cli.js
       - --deterministic
       - --db=/ganache_data
-      - --networkId
-      - '10'
       - --hostname
       - '0.0.0.0'
   postgres:
@@ -75,10 +73,11 @@ services:
   nft-app:
     build:
       context: ./nft-app
-    container_name: nft-app
+    container_name: nft-app 
     #network_mode: host
     environment:
-      REACT_APP_BASE_URL: 'http://173.26.0.120:8088/api/v1' 
+      REACT_APP_BASE_URL: 'http://173.26.0.120:8088/api/v1'
+       
     networks:
       vidnftnet:
         ipv4_address: 173.26.0.130 
