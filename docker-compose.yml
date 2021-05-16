@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
 
   ganache:
@@ -22,7 +22,7 @@ services:
       - --deterministic
       - --db=/ganache_data
       - --networkId
-      - '10'
+      - '1337'
       - --hostname
       - '0.0.0.0'
   postgres:
@@ -37,15 +37,15 @@ services:
         ipv4_address: 173.26.0.110 
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -d marketplace"]
-      interval: 2s
-      timeout: 50s
+      interval: 5s
+      timeout: 5s
       retries: 25        
     ports:
       - 5432:5432
 
   marketplace_init:
-    build:
-      context: ./marketplace
+    build: ./marketplace
+    image: marketplace
     container_name: marketplace_init
     depends_on:
       postgres:
@@ -57,10 +57,11 @@ services:
     command:  bash -c '/goose -dir /migrations -table marketplace postgres "host=postgres port=5432 dbname=marketplace sslmode=disable" up'
 
   marketplace:
-    build:
-      context: ./marketplace
+    image: marketplace
     container_name: marketplace
     depends_on:
+      marketplace_init:
+        condition: service_started
       postgres:
         condition: service_healthy
     env_file: 
@@ -73,9 +74,9 @@ services:
       - 8088:8088
           
   nft-app:
-    build:
-      context: ./nft-app
+    build: ./nft-app
     container_name: nft-app
+    image: nft-app
     #network_mode: host
     environment:
       REACT_APP_BASE_URL: 'http://173.26.0.120:8088/api/v1' 
@@ -85,10 +86,10 @@ services:
     ports:
       - 8080:80
 
-  nft-contracts-deploy:
-    build: 
-      context: wyvern-nft-tokens-poc
-    container_name: nft-contracts-deploy
+  nft-contracts:
+    build: ./wyvern-nft-tokens-poc
+    image: nft-contracts
+    container_name: nft-contracts
     depends_on:
       ganache:
         condition: service_healthy
