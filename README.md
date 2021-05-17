@@ -76,6 +76,7 @@ MARKETPLACE_ERC1155_CONTRACT_KEY_PASS=
 
 ## Ganache
 Test network.
+It can removed by providing Web3 provider for Mainnet or any testnet to the marketplace.
 
 ## Token Contracts
 Environment variables:
@@ -86,4 +87,7 @@ ERC1155_TOKEN_URI_TEMPLATE="ipfs://{id}"
 ```
 
 ## Explorer
-Lightweight Block Explorer
+An open source Lightweight Block Explorer
+It can show the status of blockchain and can be replaced with any Ethereum blockchain. It is useful if a local test chain such as Ganache is used.
+
+https://github.com/Alethio/ethereum-lite-explorer
