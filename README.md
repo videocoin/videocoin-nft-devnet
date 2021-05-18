@@ -22,7 +22,7 @@ http://localhost:8080/
 
 Use the follwing test private-key in Metamask with "Localhost 8545" Netowork
 ```
-Private Key: 0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d
+Private Key: 4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d
 Account: 0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1
 
 ```
@@ -90,7 +90,7 @@ Environment variables:
 ```
 VID_PRIV_KEY=""
 VID_RPC=http://localhost:8545
-ERC1155_TOKEN_URI_TEMPLATE="ipfs://{id}"
+ERC1155_TOKEN_URI_TEMPLATE="https://hub.textile.io/ipns/<MARKETPLACE_TEXTILE_BUCKET_ROOT_KEY>/1.json"
 ```
 
 ## Explorer
