@@ -20,6 +20,13 @@ Open the browser and launch the aft-app.
 http://localhost:8080/
 ```
 
+Use the follwing test private-key in Metamask with "Localhost 8545" Netowork
+```
+Private Key: 0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d
+Account: 0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1
+
+```
+
 Open Lightweight Block Explorer
 ```
 http://localhost:8090/
